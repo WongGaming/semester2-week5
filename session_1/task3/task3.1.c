@@ -56,10 +56,19 @@ int main(void) {
 
     /* subtask 1: calculate base bill using slabs */
 	// complete your code here
-    if (units <= 100) {
-        bill = units * 2.0;
-		// to do
+    if (units <= 100) 
+    {
+        bill = units * 2.00;
+    } 
+    else if (units <= 300) 
+    {
+        bill = (100 * 2.00) + ((units - 100) * 3.50);
+    } 
+    else 
+    {
+        bill = (100 * 2.00) + (200 * 3.50) + ((units - 300) * 5.00);
     }
+    
 
     /* subtask 2: apply surcharge based on customer type */
 	// complete your code here
@@ -67,7 +76,12 @@ int main(void) {
         case 1:
             // to do
 			break;
-
+        case 2:
+            bill = bill + 0.1 * bill;
+            break;
+        case 3:
+            bill = bill + 0.2 * bill;
+            break;
         default:
             printf("Invalid customer type\n");
             return 1;

@@ -31,11 +31,12 @@ int main(void) {
     scanf("%f", &purchase_amount);
 	
 	// Complete your code here
-	if (){  // todo
-		// todo
+	if (purchase_amount <= account_balance)
+	{
 		printf("Transaction Approved. Remaining balance %.2f\n", account_balance);
 	}
-	else{
+	else
+	{
 		printf("Insufficient Balance!\n");
 	}
 
