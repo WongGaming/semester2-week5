@@ -8,8 +8,12 @@ int main(void){
  * Complete the following while loop in C to ask user input for a password 
  * until 'secure123' is entered.
  */
-     char password[50];
-	 
+     char password[50] = "";
+      while(strcmp(password,"secure123") != 0)
+     {
+        printf("Enter password: ");
+        scanf("%49s", password);
+     }
 	 // compare using strcmp(str1,str2) from week 4
 	 // complete the rest of the code here
 	

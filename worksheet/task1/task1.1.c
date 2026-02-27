@@ -8,8 +8,23 @@
  */
 
 #include <stdio.h>
+#include <math.h>
 
 int main(void) {
-    
+    for(int i = 0; i < 100; i++)
+	{
+		int prime = 1;
+		for(int j = 0; j < sqrt(i); j++)
+		{
+			if (i % j == 0)
+			{
+				prime = 0;
+			} 
+		}
+		if (prime = 1)
+		{
+			printf("%i", prime);
+		}
+	}
 	return 0;
 }
